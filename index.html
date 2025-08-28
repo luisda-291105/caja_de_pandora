@@ -14,6 +14,11 @@
         .orden_Fila_Epacio {
             white-space: pre-line;
         }
+
+        .img_logo_sm {
+            width: 10%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -21,11 +26,17 @@
     <header class="border-bottom">
         <nav class="navbar navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#">Caja de Pandora</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <!-- logo -->
+                <a class="navbar-brand fw-bold col-10" href="#">
+                    <img src="pandora_box_logo_noLetras.png" alt="Logo" class="img-fluid img_logo_sm">
+                    Caja de Pandora
+                </a>
+                <!-- noton de hamburguesa -->
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- barra de navegación -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -318,7 +329,7 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"
-        ></script>
+    ></script>
 </body>
 
 </html>
