@@ -14,42 +14,34 @@
         .orden_Fila_Epacio {
             white-space: pre-line;
         }
-
-        .img_logo_sm {
-            width: 10%;
-            height: auto;
-        }
     </style>
 </head>
 
 <body class="mx-2">
     <header class="border-bottom">
         <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container-fluid">
+            <div class="container-fluid ">
                 <!-- logo -->
-                <a class="navbar-brand fw-bold col-10" href="#">
-                    <img src="pandora_box_logo_noLetras.png" alt="Logo" class="img-fluid img_logo_sm">
-                    Caja de Pandora
-                </a>
+                <a class="navbar-brand fw-bold " href="#">Caja de Pandora</a>
                 <!-- noton de hamburguesa -->
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- barra de navegación -->
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" href="#start">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="#product">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="#we">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Contacto</a>
+                            <a class="nav-link " href="#contact">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -58,7 +50,7 @@
     </header>
 
     <!-- hero -->
-    <section class="bg-light py-5 text-center container-flout">
+    <section class="bg-light py-5 text-center container-flout" id="start">
         <div class="row">
             <div class="col-ms-11 col-md-6">
                 <h1 class="display-4 fw-bold">Sabores que despiertan magia</h1>
@@ -77,15 +69,15 @@
     </section>
 
     <!-- productos -->
-    <section class="contener text-center my-5">
+    <section class="contener text-center " id="product">
 
         <h2>Nuestra Epecialides</h2>
         <p>Cada producto es una obra de arte culinaria, elaborada con técnicas tradicionales y los mejores
             ingredientes</p>
 
 
-        <section class="row m-auto ">
-            <div class="card col-ms-10 my-2 col-md-6 col-lg-2 mx-2" style="width: 18rem;">
+        <section class="row ">
+            <div class="card col-ms-1 my-2 col-md-6 col-lg-2 mx-2 m-auto" style="width: 18rem;">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
                     class="card-img-top " alt="Tortas personalizadas">
                 <div class="card-body text-start">
@@ -127,7 +119,7 @@
     </section>
 
     <!-- nosotros -->
-    <section class="bg-light py-5 text-center container-flout">
+    <section class="bg-light py-5  text-center container-flout" id="we">
 
         <div class="text-center col-ms-11 col-md-9 m-auto ">
             <h1 class="display-4 fw-bold">Nuestra Historia</h1>
@@ -177,7 +169,7 @@
     </section>
 
     <!-- contacto -->
-    <section class="bg-light py-5 text-center container-flout">
+    <section class="bg-light py-5  text-center container-flout" id="contact">
         <div class="row">
             <div>
                 <h1 class="display-4 fw-bold">Visítanos</h1>
@@ -235,7 +227,7 @@
                     </div>
                 </div>
 
-                <div class="col-ms-10 col-md-5 m-auto ">
+                <div class="col-ms-10 col-md-5 m-auto mt-5">
                     <form action="" class="border m-auto rounded-4">
                         <fieldset class=" d-flex flex-column gap-2 m-4 text-start">
                             <legend>Envianos un Mensaje</legend>
@@ -299,16 +291,16 @@
                 <h2 class="fw-bold">Enlases Rápidos</h2>
                 <ul class=" d-flex flex-column gap-2">
                     <li  class="list-inline-item">
-                        <a class="lead" href="#">Inicio</a>
+                        <a class="lead" href="#start">Inicio</a>
                     </li>
                     <li  class="list-inline-item">
-                        <a class="lead" href="#">Producto</a>
+                        <a class="lead" href="#product">Producto</a>
                     </li>
                     <li  class="list-inline-item">
-                        <a class="lead" href="#">Nosotros</a>
+                        <a class="lead" href="#we">Nosotros</a>
                     </li>
                     <li  class="list-inline-item">
-                        <a class="lead" href="#">Contacto</a>
+                        <a class="lead" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
