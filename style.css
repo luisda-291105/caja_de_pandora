@@ -1,0 +1,12 @@
+:root {
+    --cafe-calido: #5C3A2E;
+    --beige: #F5ECE4;
+    --rosa-suave: #D9A8A0;
+    --cafe-claro: #A57C65;
+    --blanco: #ffffff;
+    
+}
+
+.bg-primario {
+    background-color: var(--beige);
+}
