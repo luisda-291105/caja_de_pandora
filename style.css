@@ -58,13 +58,6 @@
                 justify-content: center;
             }
 
-            @media screen and (max-width: 749px) {
-                .icon-container {
-                    width: 25px;
-                    height: 25px;
-                    font-size: 5px;
-                }
-            }
             .icon-container > a {
                 text-decoration: none;
             }
@@ -73,6 +66,13 @@
                 border: none;
                 padding: 0;
             } 
+
+            @media screen and (max-width: 749px) {
+                .icon-container {
+                    background-color: var(--trasparente);
+                    color: var(--cafe-calido);
+                }
+            }
 
 /* efectos */
 
