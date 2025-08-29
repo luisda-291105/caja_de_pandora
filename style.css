@@ -57,6 +57,10 @@
                 align-items: center;
                 justify-content: center;
             }
+
+            .icon-container > a {
+                text-decoration: none;
+            }
         
             .form-fieldset {
                 border: none;
