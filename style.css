@@ -57,6 +57,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: all 0.2s ease-in;
+            }
+
+            .icon-container:hover {
+                color: var(--cafe-calido);
+                background-color: var(--trasparente);
+                border: 1px solid var(--cafe-calido);
             }
 
             .icon-container > a {
@@ -83,6 +90,7 @@
 
 /* efectos */
 
+            /* no efecto */
             .no-hover:hover {
                 background-color: inherit !important;
                 color: inherit !important;
@@ -91,6 +99,24 @@
                 box-shadow: none !important;
             }
 
+            /* link */
+            .link {
+                transition: all 0.2s ease-in;
+            }
+
+            .link-hover-header:hover {
+                text-shadow: 1px 1px 10px var(--cafe-claro);
+            }
+
+            .link-hover-footer:hover {
+                color: var(--beige);
+            }
+
+            .link-hover-icons:hover {
+                color: var(--rosa-suave);
+                background-color: var(--cafe-calido);
+                text-shadow: 1px 1px 10px var(--cafe-claro);
+            }
 /* tamaños */
 
             .w-15 {
