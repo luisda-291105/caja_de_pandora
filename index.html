@@ -7,25 +7,23 @@
     <title>Document</title>
 
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-        rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- bootstrap icons -->
-    <link rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- css custom -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="mx-2">
-    <header class="border-bottom ">
-        <nav class="navbar navbar-expand-md bg-primario">
+<body class="px-1 ">
+    <header class="border-bottom  bg-primario text-primario ">
+        <nav class="navbar navbar-expand-md ">
             <div class="container-fluid ">
                 <!-- logo -->
-                <a class="navbar-brand fw-bold " href="#">Caja de Pandora</a>
+                <a class="navbar-brand fw-bold text-primario no-hover col " href="#"><img
+                        src="pandora_box_logo_noLetras.png" alt="" class="img-fluid w-15"> Caja de Pandora</a>
                 <!-- noton de hamburguesa -->
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,15 +51,16 @@
     </header>
 
     <!-- hero -->
-    <section class="bg-light py-5 text-center container-flout" id="start">
-        <div class="row bg-primario">
+    <section class=" py-5 text-center container-flout  bg-primario text-primario" id="start">
+        <div class="row ">
             <div class="col-ms-11 col-md-6">
                 <h1 class="display-4 fw-bold">Sabores que despiertan magia</h1>
                 <p class="lead">Descubre el encanto de nuestros postres artesanales, cada uno preparado con amor y los
                     ingredientes más selectos para crear momentos inolvidables.</p>
                 <div class="row m-3 gap-4">
-                    <a href="#servicios" class="btn btn-primary btn-lg col-ms-7 col-md-5">Ver Productos</a>
-                    <button type="button" class="btn btn-outline-secondary col-ms-7 col-md-6">Conoce Nuestra Historia</button>
+                    <a href="#servicios" class="btn color-boton  btn-lg col-ms-7 col-md-5">Ver Productos</a>
+                    <button type="button" class="btn color-boton-noBg col-ms-7 col-md-6">Conoce Nuestra
+                        Historia</button>
                 </div>
             </div>
             <div class="col-ms-11 col-md-6">
@@ -72,259 +71,356 @@
     </section>
 
     <!-- productos -->
-    <section class="contener text-center " id="product">
+    <section class="py-5  contener text-center " id="product">
 
-        <h2>Nuestra Epecialides</h2>
+        <h2 class="py-2">Nuestra Epecialides</h2>
         <p>Cada producto es una obra de arte culinaria, elaborada con técnicas tradicionales y los mejores
             ingredientes</p>
 
-
+        <!-- contenedor de todos los itens -->
         <section class="row justify-content-center">
-            <div class="card my-2 col-12 col-md-6 col-lg-2 mx-2 m-auto" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
-                    class="card-img-top " alt="Tortas personalizadas">
-                <div class="card-body text-start">
-                    <h5 class="card-title">Tortas personalizadas</h5>
-                    <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
-                    <a class="link-opacity-50 link-underline-light" href="#">ver más <i
-                            class="bi bi-arrow-right"></i></a>
+
+            <!-- iten -->
+            <div class="card my-2 col-12 col-md-6 col-lg-2 bg-primario text-primario mx-2 p-3 rounded-5 ">
+
+                <!-- el que hace el efecto en conjunto (texto y imagen) -->
+                <div class="card-hover">
+
+                    <!-- imagen -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
+                        class="card-img-top " alt="Tortas personalizadas">
+
+                    <!-- texto -->
+                    <div class="card-body text-start pb-0 ">
+                        <h5 class="card-title">Tortas personalizadas</h5>
+                        <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
+                        <a class="link-opacity-50 link-underline-light" href="#">ver más
+                            <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="card col-12 my-2 col-md-6 col-lg-2 mx-2" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
-                    class="card-img-top " alt="Tortas personalizadas">
-                <div class="card-body text-start">
-                    <h5 class="card-title">Tortas personalizadas</h5>
-                    <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
-                    <a class="link-opacity-50 link-underline-light" href="#">ver más <i
-                            class="bi bi-arrow-right"></i></a>
+            <!-- iten -->
+            <div class="card my-2 col-12 col-md-6 col-lg-2 bg-primario text-primario mx-2 p-3 rounded-5 ">
+
+                <!-- el que hace el efecto en conjunto (texto y imagen) -->
+                <div class="card-hover">
+
+                    <!-- imagen -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
+                        class="card-img-top " alt="Tortas personalizadas">
+
+                    <!-- texto -->
+                    <div class="card-body text-start pb-0 ">
+                        <h5 class="card-title">Tortas personalizadas</h5>
+                        <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
+                        <a class="link-opacity-50 link-underline-light" href="#">ver más
+                            <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="card col-12 my-2 col-md-6 col-lg-2 mx-2" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
-                    class="card-img-top " alt="Tortas personalizadas">
-                <div class="card-body text-start">
-                    <h5 class="card-title">Tortas personalizadas</h5>
-                    <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
-                    <a class="link-opacity-50 link-underline-light" href="#">ver más <i
-                            class="bi bi-arrow-right"></i></a>
+            <!-- iten -->
+            <div class="card my-2 col-12 col-md-6 col-lg-2 bg-primario text-primario mx-2 p-3 rounded-5 ">
+
+                <!-- el que hace el efecto en conjunto (texto y imagen) -->
+                <div class="card-hover">
+
+                    <!-- imagen -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
+                        class="card-img-top " alt="Tortas personalizadas">
+
+                    <!-- texto -->
+                    <div class="card-body text-start pb-0 ">
+                        <h5 class="card-title">Tortas personalizadas</h5>
+                        <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
+                        <a class="link-opacity-50 link-underline-light" href="#">ver más
+                            <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
                 </div>
+            </div>
+
+            <!-- iten -->
+            <div class="card my-2 col-12 col-md-6 col-lg-2 bg-primario text-primario mx-2 p-3 rounded-5 ">
+
+                <!-- el que hace el efecto en conjunto (texto y imagen) -->
+                <div class="card-hover">
+
+                    <!-- imagen -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
+                        class="card-img-top " alt="Tortas personalizadas">
+
+                    <!-- texto -->
+                    <div class="card-body text-start pb-0 ">
+                        <h5 class="card-title">Tortas personalizadas</h5>
+                        <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
+                        <a class="link-opacity-50 link-underline-light" href="#">ver más
+                            <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- iten -->
+            <div class="card my-2 col-12 col-md-6 col-lg-2 bg-primario text-primario mx-2 p-3 rounded-5 ">
+
+                <!-- el que hace el efecto en conjunto (texto y imagen) -->
+                <div class="card-hover">
+
+                    <!-- imagen -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
+                        class="card-img-top " alt="Tortas personalizadas">
+
+                    <!-- texto -->
+                    <div class="card-body text-start pb-0 ">
+                        <h5 class="card-title">Tortas personalizadas</h5>
+                        <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
+                        <a class="link-opacity-50 link-underline-light" href="#">ver más
+                            <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- iten -->
+            <div class="card my-2 col-12 col-md-6 col-lg-2 bg-primario text-primario mx-2 p-3 rounded-5 ">
+
+                <!-- el que hace el efecto en conjunto (texto y imagen) -->
+                <div class="card-hover">
+
+                    <!-- imagen -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
+                        class="card-img-top " alt="Tortas personalizadas">
+
+                    <!-- texto -->
+                    <div class="card-body text-start pb-0 ">
+                        <h5 class="card-title">Tortas personalizadas</h5>
+                        <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
+                        <a class="link-opacity-50 link-underline-light" href="#">ver más
+                            <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row m-5">
+
+                <a href="#servicios" class="btn color-boton btn-lg  col-11  m-auto">Ver Todos Nuestros
+                    Productos</a>
             </div>
         </section>
-
-        <div class="row m-5">
-
-            <a href="#servicios" class="btn btn-primary btn-lg  col-11  m-auto">Ver Todos Nuestros
-                Productos</a>
-        </div>
     </section>
 
     <!-- nosotros -->
-    <section class="bg-light py-5  text-center container-flout" id="we">
+    <section class="py-5  text-center bg-primario text-primario" id="we">
 
-        <div class="text-center col-ms-11 col-md-9 m-auto ">
+        <div class="text-center m-auto ">
             <h1 class="display-4 fw-bold">Nuestra Historia</h1>
+            
             <p class="lead">Desde 2025, caja de pandora ha sido el lugar donde los sueños dulces se hacen realidad.
                 Comenzamos como un pequeño taller familiar y hemos crecido hasta convertirnos en la reposteria de
                 confianza de nuestra comunidad.</p>
+
             <p class="lead">Cada receta lleva el corazón de nuestros maestros reposteros, quienes cambinan técnicas
                 tradicionales con inovación para crear experiencias unicas que despiertan todos los centidos</p>
 
         </div>
-        <div class="row m-auto my-5">
-            <div class="col-md-5">
+        <div class="row my-5">
+
+            <div class="col-12 col-md-6 ">
+
                 <div class="d-flex ">
-                    <div class="p-2 m-3">
-                        <i class="bi bi-heart"></i>
+                    <div class="m-auto me-2 ">
+                        <i class="bi bi-heart color-rosa-blanco"></i>
                     </div>
                     <div class="text-start">
                         <h4 class="fw-bold">Hecho Con Amor</h4>
                         <p class="lead">Cada producto lleva nuestra pasión y dedicación.</p>
                     </div>
                 </div>
+
                 <div class="d-flex ">
-                    <div class="p-2 m-3">
-                        <i class="bi bi-award"></i>
+                    <div class="m-auto me-2">
+                        <i class="bi bi-award color-rosa-blanco"></i>
                     </div>
                     <div class="text-start">
                         <h4 class="fw-bold">Calidad Premium</h4>
                         <p class="lead">Solo utilizamos los mejores ingredientes.</p>
                     </div>
                 </div>
+
                 <div class="d-flex ">
-                    <div class="p-2 m-3">
-                        <i class="bi bi-people"></i>
+                    <div class="m-auto me-2">
+                        <i class="bi bi-people color-rosa-blanco"></i>
                     </div>
                     <div class="text-start">
                         <h4 class="fw-bold">Tradición Familiar</h4>
                         <p class="lead">Recetas tradicionales de genereción en generación.</p>
                     </div>
                 </div>
+
             </div>
-            <div class="col-ms-11 col-md-6">
-                <img src="https://gairagourmet.co/wp-content/uploads/2024/07/Escuela-de-Gastronomia-Reposteria-y-Panaderia-en-Valledupar-1024x577.jpg" 
-                class="rounded img-fluid" 
-                alt="Nuestro equipo de reposteria">
+
+            <div class="col-12 col-md-6">
+                <img src="https://gairagourmet.co/wp-content/uploads/2024/07/Escuela-de-Gastronomia-Reposteria-y-Panaderia-en-Valledupar-1024x577.jpg"
+                    class="rounded img-fluid" alt="Nuestro equipo de reposteria">
             </div>
+
         </div>
     </section>
 
     <!-- contacto -->
-    <section class="bg-light py-5  text-center container-flout" id="contact">
-        <div class="row">
-            <div>
-                <h1 class="display-4 fw-bold">Visítanos</h1>
+    <section class="py-5 px-3  " id="contact">
+            <div class="text-center">
+                <h1 class=" fw-bold">Visítanos</h1>
                 <p class="lead">Ven a conocer nuestro taller y déjate sorprender por el aroma y la magia de nuestros
                     postres.</p>
 
             </div>
-            <section class="row my-5 m-auto">
+            <section class="row my-5">
 
-                <div class="col-md-5 m-auto">
-                    <div class="d-flex ">
-                        <div class="p-2 m-3">
-                            <i class="bi bi-geo-alt"></i>
+                <div class="col-12 col-md-6">
+                
+                    <div class="d-flex">
+                        <div class="m-auto me-2">
+                            <i class="bi bi-geo-alt color-rosa-blanco"></i>
                         </div>
                         <div class="text-start">
                             <h4 class="fw-bold">Ubicacion</h4>
-                            <p class="lead orden_Fila_Epacio">Av. principal 123, centro de la comunidad
-                                medellin
-                            </p>
+                            <p class="lead ">Av. principal 123, centro de la comunidad medellin</p>
                         </div>
                     </div>
+
                     <div class="d-flex ">
-                        <div class="p-2 m-3">
-                            <i class="bi bi-telephone"></i>
+                        <div class="m-auto me-2">
+                            <i class="bi bi-telephone color-rosa-blanco"></i>
                         </div>
                         <div class="text-start">
                             <h4 class="fw-bold">Telefono</h4>
-                            <p class="lead orden_Fila_Epacio">+57 310 7378636
-                                llamame bebe<i class="bi bi-heart"></i>
-                            </p>
+                            <p class="lead">+57 310 7378636</p>
+                            <p>llamame bebe<i class="bi bi-heart"></i></p>
                         </div>
                     </div>
+
                     <div class="d-flex ">
-                        <div class="p-2 m-3">
-                            <i class="bi bi-clock"></i>
+                        <div class="m-auto me-2">
+                            <i class="bi bi-clock color-rosa-blanco"></i>
                         </div>
                         <div class="text-start">
                             <h4 class="fw-bold">Horario</h4>
-                            <p class="lead orden_Fila_Epacio">Lunes - viernes: 9:00 AM - 8:00 PM
+                            <p class="lead ">Lunes - viernes: 9:00 AM - 8:00 PM
                                 Sabado: 9:00 AM - 9:00 PM
                                 domingo: 10:00 AM - 6:00 PM
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex col-md-6 col-lg-4">
-                        <div class="p-2 m-3">
-                            <i class="bi bi-envelope"></i>
+
+                    <div class="d-flex ">
+                        <div class="m-auto me-2">
+                            <i class="bi bi-envelope color-rosa-blanco"></i>
                         </div>
                         <div class="text-start">
                             <h4 class="fw-bold">Email</h4>
-                            <p class="lead orden_Fila_Epacio">info@cajaPandora.com
-                                pedidos@cajaPandora.com
-                            </p>
+                            <p class="lead">info@cajaPandora.com</p>
+                            <p class="lead">pedidos@cajaPandora.com</p>
                         </div>
                     </div>
+                
                 </div>
 
-                <div class="col-ms-10 col-md-5 m-auto mt-5">
-                    <form action="" class="border m-auto rounded-4">
+                <div class="col-12 col-md-6">
+                    <form action="" class="border m-auto rounded-4 bg-primario text-primario">
                         <fieldset class=" d-flex flex-column gap-2 m-4 text-start">
                             <legend>Envianos un Mensaje</legend>
 
                             <label for="userName">nombre</label>
                             <input type="text" name="userName" id="userName" placeholder="Ej: luis daniel"
-                                class="rounded px-3 py-2">
+                                class="rounded px-3 py-2 color-input">
 
 
                             <label for="userEmail">Email</label>
                             <input type="email" name="userEmail" id="userEmail"
-                                placeholder="ej: luisdaperezpinedo@gmail.com" class="rounded px-3 py-2">
+                                placeholder="ej: luisdaperezpinedo@gmail.com" class="rounded px-3 py-2 color-input">
 
                             <label for="phone">telefono</label>
                             <input type="tel" name="phone" id="phone" placeholder="ej: 310 7378636"
-                                class="rounded px-3 py-2">
+                                class="rounded px-3 py-2 color-input">
 
                             <label for="Message">Menasaje</label>
-                            <textarea name="message" id="message"
-                                class="rounded px-3 py-2" placeholder="Cuéntanos sobre tu pedido especial o consulta..."
-                                rows="5"></textarea>
+                            <textarea name="message" id="message" class="rounded px-3 py-2 color-input"
+                                placeholder="Cuéntanos sobre tu pedido especial o consulta..." rows="5"></textarea>
 
-                            <button type="submit" class="btn btn-primary mt-3">Enviar Mensaje</button>
+                            <button type="submit" class="btn color-boton mt-3">Enviar Mensaje</button>
                         </fieldset>
                     </form>
                 </div>
             </section>
 
-        </div>
     </section>
 
     <!-- footer -->
-    <footer class="contener my-5">
+    <footer class="contener  footer py-1 px-3">
         <section class="row my-5">
             <div class="col-ms-11 col-md-6 ">
                 <!-- titulo con parrafo -->
                 <h2 class="fw-bold">Caja de Pandora</h2>
-                <p class="lead">desde 2025 creando momentos dulces e inolvidables.
+                <p class="lead text-secundario">desde 2025 creando momentos dulces e inolvidables.
                     nuestros postres artesanales son más que simples dulces,
                     son experiencias que despiertan todos los sentidos.
                 </p>
 
-                    <!-- icons de facebook e instagram -->
-                    <div class="d-flex gap-4 my-4 ms-3 ">
-                        <a href="#"><i class="bi bi-facebook fs-2"></i></a>
-                        <a href="#"><i class="bi bi-instagram fs-2"></i></a>
-                    </div>
+                <!-- icons de facebook e instagram -->
+                <div class="d-flex gap-4 my-4 ms-3 ">
+                    <a class="color-rosa" href="#"><i class="bi bi-facebook fs-2"></i></a>
+                    <a class="color-rosa" href="#"><i class="bi bi-instagram fs-2"></i></a>
+                </div>
 
-                    <!-- contacto -->
-                    <div class="d-flex flex-column ">
-                        <p class="lead"><i class="bi bi-geo-alt "></i>Av. Principal 123, centro</p>
-                        <p class="lead"><i class="bi bi-telephone "></i>+57 310 7378636</p>
-                        <p class="lead"><i class="bi bi-envelope "></i>info@cajaPandora.com</p>
-                    </div>
-                    
-
-                
+                <!-- contacto -->
+                <div class="d-flex flex-column ">
+                    <p class="lead text-secundario"><i class="bi bi-geo-alt "></i>Av. Principal 123, centro</p>
+                    <p class="lead text-secundario"><i class="bi bi-telephone "></i>+57 310 7378636</p>
+                    <p class="lead text-secundario"><i class="bi bi-envelope "></i>info@cajaPandora.com</p>
+                </div>
 
             </div>
             <div class="col-ms-11 col-md-6 my-4">
                 <h2 class="fw-bold">Enlases Rápidos</h2>
                 <ul class=" d-flex flex-column gap-2">
-                    <li  class="list-inline-item">
-                        <a class="lead" href="#start">Inicio</a>
+                    <li class="list-inline-item">
+                        <a class="lead text-secundario" href="#start">Inicio</a>
                     </li>
-                    <li  class="list-inline-item">
-                        <a class="lead" href="#product">Producto</a>
+                    <li class="list-inline-item">
+                        <a class="lead text-secundario" href="#product">Producto</a>
                     </li>
-                    <li  class="list-inline-item">
-                        <a class="lead" href="#we">Nosotros</a>
+                    <li class="list-inline-item">
+                        <a class="lead text-secundario" href="#we">Nosotros</a>
                     </li>
-                    <li  class="list-inline-item">
-                        <a class="lead" href="#contact">Contacto</a>
+                    <li class="list-inline-item">
+                        <a class="lead text-secundario" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="row border-top pt-3">
             <div class="col-ms-11 col-md-6">
-                <p class="lead"><i class="bi bi-c-circle"></i>2025 Caja de pandora. Todos los derechos reservados.</p>
+                <p class="lead text-secundario"><i class="bi bi-c-circle"></i> 2025 Caja de pandora. Todos los derechos
+                    reservados.</p>
             </div>
             <ul class="d-flex gap-2 col-ms-11 col-md-6">
-                <li class="list-inline-item"><a class="lead" href="#">Politica de Privacidad</a></li>
-                <li class="list-inline-item"><a class="lead" href="#">Términos de Servicios</a></li>
+                <li class="list-inline-item "><a class="lead text-secundario" href="#">Politica de Privacidad</a></li>
+                <li class="list-inline-item "><a class="lead text-secundario" href="#">Términos de Servicios</a></li>
             </ul>
             </div>
         </section>
     </footer>
 
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"
-    ></script>
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
