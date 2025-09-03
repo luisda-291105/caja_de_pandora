@@ -19,7 +19,7 @@
 </head>
 
 <body class="px-1 text-primario">
-    <header class="border-bottom  bg-primario ">
+    <header class="border-bottom  bg-primario position-fixed  w-100 z-3">
         <nav class="navbar navbar-expand-md ">
             <div class="container-fluid ">
                 <!-- logo -->
@@ -34,16 +34,10 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link link-hover-header link" href="#start">Inicio</a>
+                            <a class="nav-link link-hover-header link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-hover-header link" href="#product">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-hover-header link" href="#we">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-hover-header link " href="#contact">Contacto</a>
+                            <a class="nav-link link-hover-header link "  data-bs-toggle="modal" data-bs-target="#formModal">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +45,7 @@
         </nav>
     </header>
 
-    <section class="py-5  contener text-center">
+    <section class="py-5  contener text-center ">
 
         <section>
             <h1 class="py-2 h1">Caja de Pandora</h1>
