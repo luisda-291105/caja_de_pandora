@@ -44,6 +44,12 @@
                 color: var(--cafe-claro);
             }
 
+            /* modal */
+
+            .bg-modal {
+                background-color: #f5ece44f;
+            }
+
 /* formas */
 
             /* iconos */
