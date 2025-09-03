@@ -13,6 +13,7 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="px-1 text-primario">
@@ -64,11 +65,11 @@
                 </div>
             </section>
 
-            <section class="col-ms-11 col-md-6 m-auto cajita">
+            <section class="col-ms-11 col-md-6 m-auto cajita pt-5">
                 <!-- agregar las distintas versiones -->
                 <img src="img/product/WhatsApp Image 2025-09-02 at 5.38.19 PM (4).jpeg"
                     alt="Postre artesanal de caja de pandora"
-                    class="rounded-5 w-75 h-50 img_15deg bordes-img position-relative z-2 rotate">
+                    class="rounded-5 w-50 img_15deg bordes-img position-relative z-2 rotate">
                 <div class="bolita bolita1"></div>
                 <div class="bolita bolita2"></div>
             </section>
@@ -84,14 +85,18 @@
         </section>
         <!-- contenedor de todos los itens -->
         <section class="row justify-content-center">
-            <div class="card col-12 my-2 col-md-6 col-lg-2 mx-2 m-auto" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
-                    class="card-img-top " alt="Tortas personalizadas">
-                <div class="card-body text-start">
-                    <h5 class="card-title">Tortas personalizadas</h5>
-                    <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
-                    <a class="link-opacity-50 link-underline-light" href="#">ver más <i
-                            class="bi bi-arrow-right"></i></a>
+
+            <article class="card my-2 col-12 col-md-6 col-lg-2 bg-primario text-primario mx-2 p-3 rounded-5 ">
+
+                <div class="card-hover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMu1lL2fdwFC0hQyiNI5Sg7LcgJ5u2ZRZ-g&s"
+                        class="card-img-top " alt="Tortas personalizadas">
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Tortas personalizadas</h5>
+                        <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
+                        <!-- <a class="link-opacity-50 link-underline-light" href="#">ver más <i
+                                class="bi bi-arrow-right"></i></a>-->
+                    </div>
                 </div>
             </article>
 
@@ -136,11 +141,11 @@
             </article>
 
 
-            <div class="row m-5 justify-content-center">
+            <section class="row m-5 justify-content-center">
 
                 <a href="product.html" class="btn color-boton btn-lg  col-11 ">Ver Todos Nuestros
                     Productos</a>
-            </div>
+            </section>
         </section>
     </section>
 
@@ -258,42 +263,42 @@
                     </div>
                 </div>
 
-            <!-- Formulario de contacto -->
-            <div class="col-12 col-md-6">
-                <form action="#" class="border p-4 rounded-4 bg-primario">
-                    <fieldset class="form-fieldset d-flex flex-column gap-3">
-                        <legend class="fw-bold fs-4 mb-3">Envíanos un Mensaje</legend>
+                <!-- Formulario de contacto -->
+                <div class="col-12 col-md-6">
+                    <form action="#" class="border p-4 rounded-4 bg-primario">
+                        <fieldset class="form-fieldset d-flex flex-column gap-3">
+                            <legend class="fw-bold fs-4 mb-3">Envíanos un Mensaje</legend>
 
-                        <div>
-                            <label for="userName" class="form-label">Nombre</label>
-                            <input type="text" name="userName" id="userName" placeholder="Ej: Luis Daniel"
-                                class="form-control rounded px-3 py-2 color-input" required>
-                        </div>
+                            <div>
+                                <label for="userName" class="form-label">Nombre</label>
+                                <input type="text" name="userName" id="userName" placeholder="Ej: Luis Daniel"
+                                    class="form-control rounded px-3 py-2 color-input" required>
+                            </div>
 
-                        <div>
-                            <label for="userEmail" class="form-label">Email</label>
-                            <input type="email" name="userEmail" id="userEmail"
-                                placeholder="ej: luisdaperezpinedo@gmail.com"
-                                class="form-control rounded px-3 py-2 color-input" required>
-                        </div>
+                            <div>
+                                <label for="userEmail" class="form-label">Email</label>
+                                <input type="email" name="userEmail" id="userEmail"
+                                    placeholder="ej: luisdaperezpinedo@gmail.com"
+                                    class="form-control rounded px-3 py-2 color-input" required>
+                            </div>
 
-                        <div>
-                            <label for="phone" class="form-label">Teléfono</label>
-                            <input type="tel" name="phone" id="phone" placeholder="ej: 310 7378636"
-                                class="form-control rounded px-3 py-2 color-input" required>
-                        </div>
+                            <div>
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" name="phone" id="phone" placeholder="ej: 310 7378636"
+                                    class="form-control rounded px-3 py-2 color-input" required>
+                            </div>
 
-                        <div>
-                            <label for="message" class="form-label">Mensaje</label>
-                            <textarea name="message" id="message"
-                                placeholder="Cuéntanos sobre tu pedido especial o consulta..." rows="5"
-                                class="form-control rounded px-3 py-2 color-input" required></textarea>
-                        </div>
+                            <div>
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea name="message" id="message"
+                                    placeholder="Cuéntanos sobre tu pedido especial o consulta..." rows="5"
+                                    class="form-control rounded px-3 py-2 color-input" required></textarea>
+                            </div>
 
-                        <button type="submit" class="btn color-boton mt-3 py-2">Enviar Mensaje</button>
-                    </fieldset>
-                </form>
-            </div>
+                            <button type="submit" class="btn color-boton mt-3 py-2">Enviar Mensaje</button>
+                        </fieldset>
+                    </form>
+                </div>
         </div>
     </section>
 
