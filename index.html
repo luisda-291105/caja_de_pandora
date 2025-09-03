@@ -53,9 +53,9 @@
     <!-- hero -->
     <section class=" py-5 text-center container-flout  bg-primario " id="start">
 
-        <div class="row ">
+        <section class="row ">
 
-            <div class="col-ms-11 col-md-6 m-auto">
+            <section class="col-ms-11 col-md-6 m-auto">
                 <h1 class="display-4 fw-bold">Sabores que despiertan magia</h1>
                 <p class="lead">Descubre el encanto de nuestros postres artesanales, cada uno preparado con amor y los
                     ingredientes más selectos para crear momentos inolvidables.</p>
@@ -64,22 +64,25 @@
                     <button type="button" class="btn color-boton-noBg col-ms-7 col-md-6">Conoce Nuestra
                         Historia</button>
                 </div>
-            </div>
+            </section>
 
-            <picture class="col-ms-11 col-md-6 m-auto">
-                <!-- agregar las distintas versiones -->
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbk1UvvLk5Mdf8wpOHsrxVqHftXMytswlejw&s"
-                    alt="Postre artesanal de caja de pandora"
-                    class="h-50 rounded-5 bordes-img  " >
-            </picture>
-        </div>
+            <section class="col-ms-11 col-md-6 m-auto cajita">
+                    <!-- agregar las distintas versiones -->
+                    <img src="img/product/WhatsApp Image 2025-09-02 at 5.38.19 PM (4).jpeg"
+                        alt="Postre artesanal de caja de pandora"
+                        class="rounded-5 w-75 h-50 img_15deg bordes-img position-relative z-3 rotate">
+                        <div class="bolita bolita1"></div>
+                        <div class="bolita bolita2"></div>
+            </section>
+        </section>
     </section>
 
     <!-- productos -->
     <section class="py-5  contener text-center " id="product">
         <section>
-            <h2 class="py-2">Nuestra Epecialides</h2>
-            <p>Cada producto es una obra de arte culinaria, elaborada con técnicas tradicionales y los mejores ingredientes</p>
+            <h2 class="py-2">Nuestra especialidad</h2>
+            <p>Cada producto es una obra de arte culinaria, elaborada con técnicas tradicionales y los mejores
+                ingredientes</p>
         </section>
         <!-- contenedor de todos los itens -->
         <section class="row justify-content-center">
@@ -91,15 +94,14 @@
                 <div class="card-hover">
 
                     <!-- imagen -->
-                    <img src="img/productos/WhatsApp Image 2025-09-02 at 5.38.18 PM (1).jpeg"
-                        class="card-img-top " alt="Tortas personalizadas">
+                    <img src="img/product/WhatsApp Image 2025-09-02 at 5.38.18 PM (1).jpeg" class="card-img-top "
+                        alt="Tortas personalizadas">
 
                     <!-- texto -->
                     <div class="card-body text-start pb-0 ">
                         <h5 class="card-title">Tortas personalizadas</h5>
                         <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
-                        <a class="link-opacity-50 link-underline-light text-secundario" href="#">ver más
-                            <i class="bi bi-arrow-right"></i></a>
+                        <!-- <a class="link-opacity-50 link-underline-light text-secundario" href="#">ver más <i class="bi bi-arrow-right"></i></a> -->
                     </div>
 
                 </div>
@@ -112,15 +114,14 @@
                 <div class="card-hover">
 
                     <!-- imagen -->
-                    <img src="img/productos/WhatsApp Image 2025-09-02 at 5.38.18 PM (2).jpeg"
-                        class="card-img-top " alt="Tortas personalizadas">
+                    <img src="img/product/WhatsApp Image 2025-09-02 at 5.38.18 PM (2).jpeg" class="card-img-top "
+                        alt="Tortas personalizadas">
 
                     <!-- texto -->
                     <div class="card-body text-start pb-0 ">
                         <h5 class="card-title">Tortas personalizadas</h5>
                         <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
-                        <a class="link-opacity-50 link-underline-light text-secundario" href="#">ver más
-                            <i class="bi bi-arrow-right"></i></a>
+                        <!-- <a class="link-opacity-50 link-underline-light text-secundario" href="#">ver más <i class="bi bi-arrow-right"></i></a> -->
                     </div>
 
                 </div>
@@ -133,15 +134,14 @@
                 <div class="card-hover">
 
                     <!-- imagen -->
-                    <img src="img/productos/WhatsApp Image 2025-09-02 at 5.38.18 PM (3).jpeg"
-                        class="card-img-top " alt="Tortas personalizadas">
+                    <img src="img/product/WhatsApp Image 2025-09-02 at 5.38.18 PM (3).jpeg" class="card-img-top "
+                        alt="Tortas personalizadas">
 
                     <!-- texto -->
                     <div class="card-body text-start pb-0 ">
                         <h5 class="card-title">Tortas personalizadas</h5>
                         <p class="card-text">Creamos la torta perfecta para tus celebraciones más especiales</p>
-                        <a class="link-opacity-50 link-underline-light text-secundario" href="#">ver más
-                            <i class="bi bi-arrow-right"></i></a>
+                        <!-- <a class="link-opacity-50 link-underline-light text-secundario" href="#">ver más <i class="bi bi-arrow-right"></i></a> -->
                     </div>
 
                 </div>
@@ -150,7 +150,7 @@
 
             <div class="row m-5">
 
-                <a href="#servicios" class="btn color-boton btn-lg  col-11  m-auto">Ver Todos Nuestros
+                <a href="product.html" class="btn color-boton btn-lg  col-11  m-auto">Ver Todos Nuestros
                     Productos</a>
             </div>
         </section>
@@ -319,15 +319,20 @@
 
                 <!-- icons de facebook e instagram -->
                 <div class="d-flex gap-4 my-4 ms-3 ">
-                    <a class="icon-container  link link-hover-icons" href="#"><i class="bi bi-facebook fs-2 text-white"></i></a>
-                    <a class="icon-container  link link-hover-icons" href="#"><i class="bi bi-instagram fs-2 text-white"></i></a>
+                    <a class="icon-container  link link-hover-icons" href="#"><i
+                            class="bi bi-facebook fs-2 text-white"></i></a>
+                    <a class="icon-container  link link-hover-icons" href="#"><i
+                            class="bi bi-instagram fs-2 text-white"></i></a>
                 </div>
 
                 <!-- contacto -->
                 <div class="d-flex flex-column ">
-                    <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-geo-alt "></i>Av. Principal 123, centro</p>
-                    <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-telephone "></i>+57 310 7378636</p>
-                    <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-envelope "></i>info@cajaPandora.com</p>
+                    <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-geo-alt "></i>Av. Principal
+                        123, centro</p>
+                    <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-telephone "></i>+57 310
+                        7378636</p>
+                    <p class="lead text-secundario  link link-hover-footer"><i
+                            class="bi bi-envelope "></i>info@cajaPandora.com</p>
                 </div>
 
             </section>
@@ -351,12 +356,15 @@
         </section>
         <section class="row border-top pt-3">
             <div class="col-ms-11 col-md-6">
-                <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-c-circle"></i> 2025 Caja de pandora. Todos los derechos
+                <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-c-circle"></i> 2025 Caja de
+                    pandora. Todos los derechos
                     reservados.</p>
             </div>
             <ul class="d-flex gap-2 col-ms-11 col-md-6">
-                <li class="list-inline-item "><a class="lead text-secundario  link link-hover-footer" href="#">Politica de Privacidad</a></li>
-                <li class="list-inline-item "><a class="lead text-secundario  link link-hover-footer" href="#">Términos de Servicios</a></li>
+                <li class="list-inline-item "><a class="lead text-secundario  link link-hover-footer" href="#">Politica
+                        de Privacidad</a></li>
+                <li class="list-inline-item "><a class="lead text-secundario  link link-hover-footer" href="#">Términos
+                        de Servicios</a></li>
             </ul>
             </div>
         </section>
