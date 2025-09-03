@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box !important;
+}
+
+/* variables */
+            :root {
+                /*texto principal, fondos de botones*/
+                --cafe-calido: #5C3A2E; 
+
+                /* fondo principal, tarjetas de productos */
+                --beige: #F5ECE4; 
+
+                /* detalles decorativos, iconos, botones secundarios */
+                --rosa-suave: #D9A8A0; 
+
+                /* texto secundario, sombras, bordes */
+                --cafe-claro: #A57C65; 
+
+                /* esaltos, fondos de hover */
+                --blanco: #ffffff; 
+
+                /* trasnparente */
+                --trasparente: #0000;                 
+            }
+
+/* colores */
+
+            /* fondo */
+            .bg-primario {
+                background-color: var(--beige);
+            }
+
+            .footer {
+                background-color: var(--cafe-calido);
+                color: var(--blanco);
+            }
+
+            /* texto */
+            .text-primario {
+                color: var(--cafe-calido);
+            }
+
+            .text-secundario {
+                color: var(--cafe-claro);
+            }
+
+            /* modal */
+
+            .bg-modal {
+                background-color: #f5ece44f;
+            }
+
+/* formas */
+
+            /* iconos */
+            .icon-container {
+                color: var(--blanco);
+                background-color: var(--rosa-suave);
+                border: 1px solid var(--trasparente);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.2s ease-in;
+            }
+
+            .icon-container:hover {
+                color: var(--cafe-calido);
+                background-color: var(--trasparente);
+                border: 1px solid var(--cafe-calido);
+            }
+
+            .icon-container > a {
+                text-decoration: none;
+            }
+        
+            .form-fieldset {
+                border: none;
+                padding: 0;
+            } 
+
+            @media screen and (max-width: 749px) {
+                .icon-container {
+                    background-color: var(--trasparente);
+                    color: var(--cafe-calido);
+                }
+            }
+
+            /* bordes */
+
+
+            .bordes-img {
+                border: 30px solid var(--cafe-claro);
+                
+            }
+
+            /* bolitas en la imagen de inicio */
+            .cajita {
+                position: relative;
+            }
+            
+            .bolita {
+                width: 20px;
+                height: auto;
+                border-radius: 50%;
+                padding: 2.5em;
+                
+            }
+            
+            .bolita1 {
+                background-color: #a57c659d;
+                position: absolute;
+                top: 0;
+                right: 2em;
+                z-index: 3;
+            }
+
+            .bolita2 {
+                background-color: var(--rosa-suave);
+                position: absolute;
+                bottom: -1.5em;
+                left: 2em;
+                z-index: 1;
+            }
+
+
+
+/* efectos */
+
+            /* no efecto */
+            .no-hover:hover {
+                background-color: inherit !important;
+                color: inherit !important;
+                text-decoration: none !important;
+                transform: none !important;
+                box-shadow: none !important;
+            }
+
+            /* link */
+            .link {
+                transition: all 0.2s ease-in;
+            }
+
+            .link-hover-header:hover {
+                text-shadow: 1px 1px 10px var(--cafe-claro);
+            }
+
+            .link-hover-footer:hover {
+                color: var(--beige);
+            }
+
+            .link-hover-icons:hover {
+                color: var(--rosa-suave);
+                background-color: var(--cafe-calido);
+                text-shadow: 1px 1px 10px var(--cafe-claro);
+            }
+
+            /* rotacion que tiene  la imagen del inicio */
+            .rotate {
+                transform: rotate(5deg);
+                transition: all 0.5s ease-in;
+            }
+
+            .rotate:hover {
+                transform: rotate(0deg);
+            }
+/* tamaños */
+
+            .w-15 {
+                max-width: 15%;
+            }
+
+
+/* cartas */
+
+            .card {
+                width: 18rem; 
+                height: 23em;
+                
+            }
+
+            .card-hover {
+                transition: all 0.5s ease-in;
+            }
+
+            .card-hover:hover {
+                object-fit: cover;
+                overflow: hidden;
+                transform: scale(1.05);
+            }
+
+/* botones */
+
+    .btn {
+        transition: all 0.5s ease-in;
+    }
+
+/* fondo solido */
+
+            .color-boton {
+                background-color: var(--cafe-calido) !important;
+                color: var(--blanco) !important;
+                border: none;
+            }
+
+            .color-boton:hover {
+                background-color: var(--trasparente) !important;
+                color: var(--cafe-calido) !important;
+                border: 1px solid var(--cafe-calido);
+            }
+
+/* fondo trasparente */
+
+            .color-boton-noBg {
+                background-color: var(--trasparente) !important;
+                color: var(--cafe-calido) !important;
+                border: 1px solid var(--cafe-calido);
+            }
+
+            .color-boton-noBg:hover {
+                background-color: var(--rosa-suave) !important;
+                color: var(--blanco) !important;
+                border: none;
+            }
+
+/* imput */
+
+            .color-input {
+                background-color: var(--trasparente) !important;
+                color: var(--cafe-calido) !important;
+                border: 1px solid var(--cafe-claro);
+                border-radius: 1em !important;
+            }
+
+            .color-input:focus {
+                outline: none;
+            }
+
+/* imagenes */
+
+            .card-img-top {
+                border-radius: 1em;
+                object-fit: cover;
+                overflow: hidden;
+                max-width: 100%;
+                max-height: 10em;
+                transform: scale(0.9);
+                transition: all 0.5s ease-in;
+            }
+
+
