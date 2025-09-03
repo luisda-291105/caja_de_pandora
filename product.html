@@ -19,8 +19,40 @@
 </head>
 
 <body class="px-1 text-primario">
+    <header class="border-bottom  bg-primario ">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid ">
+                <!-- logo -->
+                <a class="navbar-brand fw-bold text-primario no-hover col " href="#"><img
+                        src="img/pandora_box_logo_noLetras.png" alt="" class="img-fluid w-15"> Caja de Pandora</a>
+                <!-- noton de hamburguesa -->
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- barra de navegación -->
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link link-hover-header link" href="#start">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover-header link" href="#product">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover-header link" href="#we">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-hover-header link " href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <section class="py-5  contener text-center">
-        
+
         <section>
             <h1 class="py-2 h1">Caja de Pandora</h1>
             <p class="lead">"Sabores que despiertan magia."</p>
@@ -438,16 +470,16 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
                     <div class="modal-body">
-                        <form >
+                        <form>
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre</label>
-                                <input type="text" class="form-control color-input" id="nombre" placeholder="Escribe tu nombre"
-                                    required>
+                                <input type="text" class="form-control color-input" id="nombre"
+                                    placeholder="Escribe tu nombre" required>
                             </div>
                             <div class="mb-3">
                                 <label for="correo" class="form-label">Correo</label>
-                                <input type="email" class="form-control color-input" id="correo" placeholder="Escribe tu correo"
-                                    required>
+                                <input type="email" class="form-control color-input" id="correo"
+                                    placeholder="Escribe tu correo" required>
                             </div>
                             <div class="mb-3">
                                 <label for="mensaje" class="form-label">Mensaje</label>
@@ -460,6 +492,73 @@
                 </div>
             </div>
         </section>
+
+        <!-- footer -->
+        <footer class="contener  footer py-1 px-3">
+            <section class="row my-5">
+                <section class="col-ms-11 col-md-6 ">
+                    <!-- titulo con parrafo -->
+                    <h2 class="fw-bold">Caja de Pandora</h2>
+                    <p class="lead text-secundario">desde 2025 creando momentos dulces e inolvidables.
+                        nuestros postres artesanales son más que simples dulces,
+                        son experiencias que despiertan todos los sentidos.
+                    </p>
+
+                    <!-- icons de facebook e instagram -->
+                    <div class="d-flex gap-4 my-4 ms-3 ">
+                        <a class="icon-container  link link-hover-icons" href="#"><i
+                                class="bi bi-facebook fs-2 text-white"></i></a>
+                        <a class="icon-container  link link-hover-icons" href="#"><i
+                                class="bi bi-instagram fs-2 text-white"></i></a>
+                    </div>
+
+                    <!-- contacto -->
+                    <div class="d-flex flex-column ">
+                        <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-geo-alt "></i>Av.
+                            Principal
+                            123, centro</p>
+                        <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-telephone "></i>+57 310
+                            7378636</p>
+                        <p class="lead text-secundario  link link-hover-footer"><i
+                                class="bi bi-envelope "></i>info@cajaPandora.com</p>
+                    </div>
+
+                </section>
+                <section class="col-ms-11 col-md-6 my-4">
+                    <h2 class="fw-bold">Enlases Rápidos</h2>
+                    <ul class=" d-flex flex-column gap-2">
+                        <li class="list-inline-item">
+                            <a class="lead text-secundario  link link-hover-footer" href="#start">Inicio</a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a class="lead text-secundario  link link-hover-footer" href="#product">Producto</a>
+                        </li>
+                        <li class="list-inline-item link ">
+                            <a class="lead text-secundario  link link-hover-footer" href="#we">Nosotros</a>
+                        </li>
+                        <li class="list-inline-item link">
+                            <a class="lead text-secundario  link link-hover-footer" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="row border-top pt-3">
+                <div class="col-ms-11 col-md-6">
+                    <p class="lead text-secundario  link link-hover-footer"><i class="bi bi-c-circle"></i> 2025 Caja de
+                        pandora. Todos los derechos
+                        reservados.</p>
+                </div>
+                <ul class="d-flex gap-2 col-ms-11 col-md-6">
+                    <li class="list-inline-item "><a class="lead text-secundario  link link-hover-footer"
+                            href="#">Politica
+                            de Privacidad</a></li>
+                    <li class="list-inline-item "><a class="lead text-secundario  link link-hover-footer"
+                            href="#">Términos
+                            de Servicios</a></li>
+                </ul>
+                </div>
+            </section>
+        </footer>
 
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
